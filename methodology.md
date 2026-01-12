@@ -19,6 +19,9 @@ Sélectionner les bugs CRITICAL à valider en premier.
 Trouver les fichiers pseudocode/ASM correspondants.
 > **DEEP ANALYSIS & VALIDATION GPT !!!**
 
+### Étape 4.5 : Patch Diffing
+Comparer avec les patches récents du vendor pour identifier les bugs déjà corrigés et comprendre les patterns de fix.
+
 ### Étape 5 : Backward Slicing
 Remonter du SINK vers la SOURCE, variable par variable.
 
@@ -37,12 +40,18 @@ Vérifier si l'accès maximum dépasse la taille allouée.
 ### Étape 10 : Verdict Technique sur le Bug
 Conclure : **VALIDE**, **INVALIDE** ou **PARTIEL**.
 
+### Étape 10.5 : Root Cause Analysis
+Comprendre POURQUOI le bug existe (erreur de logique, mauvaise API, copier-coller, refactoring raté).
+
 ---
 
 ## PHASE B : ATTEIGNABILITÉ
 
 ### Étape 11 : Call Graph Analysis
 Remonter depuis la fonction vulnérable jusqu'aux points d'entrée.
+
+### Étape 11.5 : Dynamic Validation
+Valider le call graph avec Frida/dynamic tracing pour confirmer les chemins d'exécution réels.
 
 ### Étape 12 : Trigger Path Validation
 Identifier les conditions exactes pour atteindre la fonction : format, taille, options, flags.
@@ -85,6 +94,9 @@ Confirmer le crash sur device physique avec debugger (lldb, gdb).
 ### Étape 22 : Crash Analysis
 Analyser les registres, stack, heap au moment du crash pour comprendre le contrôle obtenu.
 
+### Étape 22.5 : Primitive Assessment
+Évaluer précisément ce qu'on contrôle : quels registres, quelle taille d'overflow, quelle précision, quel timing.
+
 ---
 
 ## PHASE E : PRIMITIVE ET STRATÉGIE
@@ -97,6 +109,9 @@ Planifier la chaîne complète : info leak → ASLR bypass → control flow hija
 
 ### Étape 25 : Info Leak Development
 Si ASLR actif, développer une fuite d'adresse (heap, stack, ou code).
+
+### Étape 25.5 : Target Identification
+Identifier les cibles à corrompre : vtables, function pointers, return addresses, metadata, flags critiques.
 
 ---
 
@@ -174,11 +189,11 @@ Créer le package final : exploit + instructions + vidéo démo.
 
 | Phase | Étapes | Focus |
 |-------|--------|-------|
-| **A** | 1-10 | Découverte & Validation |
+| **A** | 1-10.5 | Découverte & Validation |
 | **B** | 11-13 | Atteignabilité |
 | **C** | 14-17 | Environnement |
-| **D** | 18-22 | PoC Crash |
-| **E** | 23-25 | Primitive & Stratégie |
+| **D** | 18-22.5 | PoC Crash |
+| **E** | 23-25.5 | Primitive & Stratégie |
 | **F** | 26-30 | Exploit Dev |
 | **G** | 31-35 | Intégration & Test |
 | **H** | 36-39 | Stabilisation |
@@ -186,4 +201,4 @@ Créer le package final : exploit + instructions + vidéo démo.
 
 ---
 
-*Total : 43 étapes | 9 phases*
+*Total : 48 étapes | 9 phases*
