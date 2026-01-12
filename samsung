@@ -1,0 +1,304 @@
+443793212	
+P2
+CVE-2025-21074	tiszka	Fixed	Sep 8, 2025	Nov 4, 2025	Samsung	Galaxy	
+Samsung: QuramDng TrimBounds Opcode leads to out-of-bounds reads
+450884207	
+P2
+CVE-2025-58480	mjurczyk, tiszka	Fixed	Oct 10, 2025	Dec 2, 2025	Samsung	Galaxy	
+Samsung: libimagecodec.quram.so buffer overflow in WINKJ_YcbcrWriteOutput1to1_YUV422_H1V2_toRGBA8888 during JPEG decoding
+448241955	
+P2
+CVE-2025-58479	mjurczyk, tiszka	Fixed	Sep 30, 2025	Dec 2, 2025	Samsung	Galaxy	
+Samsung: QuramDng FixBadPixelList opcode out-of-bounds read/write
+447479300	
+P2
+CVE-2025-58478	tiszka	Fixed	Sep 26, 2025	Dec 2, 2025	Samsung	Galaxy	
+Samsung: QuramDng opcodes ignore PixelType, leading to out-of-bounds read/writes
+444346510	
+P2
+CVE-2025-21075	tiszka	Fixed	Sep 11, 2025	Nov 4, 2025	Samsung	Galaxy	
+Samsung: QuramDng invalid LossyJpeg component assumption, leading to out-of-bounds write
+443741909	
+P2
+CVE-2025-21043	tiszka	Fixed	Sep 8, 2025	Sep 9, 2025	Samsung	Galaxy	
+Samsung: QuramDng MapPolynomial Opcode out-of-bounds write
+442423708	
+P2
+CVE-2025-21055	tiszka	Fixed	Sep 1, 2025	Oct 7, 2025	Samsung	Galaxy	
+Samsung: QuramDng getOverlap miscalculation leads to integer overflow, leading to out-of-bounds read/write
+396226992	
+P1
+CVE-2025-20964	natashenka	Fixed	Feb 12, 2025	May 7, 2025	Samsung	S24	
+Samsung S24: Out of bounds write in VC1 Decoder (svc1d_rr_frm)
+395975495	
+P2
+CVE-2025-20963	natashenka	Fixed	Feb 11, 2025	May 7, 2025	Samsung	S24	
+Samsung S24: Out of bounds memset in VC1 Decoder
+388115013	
+P2
+CVE-2025-20944	natashenka	Fixed	Jan 6, 2025	Apr 8, 2025	Samsung	S24	
+Samsung S24: Out of bounds read in MP3 Decoder
+368695689	
+P2
+CVE-2024-49415	natashenka	Fixed	Sep 20, 2024	Dec 9, 2024	Samsung	S24	
+Samsung S24: Out of bounds write in APE Decoder
+42451563	
+P2
+CVE-2023-29092	jannh	Fixed	Feb 6, 2023	Apr 5, 2023	Samsung	Shannon	
+wfc-pkt-router can wrongly bind to external network interface instead of VPN tunnel
+42451558	
+P2
+CVE-2023-29087	ifratric	Fixed	Jan 27, 2023	Apr 10, 2023	Samsung	Shannon	
+Shannon Baseband: Heap buffer overflow when decoding SIP Retry-After header
+42451557	
+P2
+CVE-2023-29086	ifratric	Fixed	Jan 27, 2023	Apr 10, 2023	Samsung	Shannon	
+Shannon Baseband: Stack buffer overflow when decoding SIP Min-SE header
+42451556	
+P2
+CVE-2023-29089	ifratric	Fixed	Jan 27, 2023	Apr 10, 2023	Samsung	Shannon	
+Shannon Baseband: Negative-size memcpy and oob read when decoding SIP multipart messages
+42451555	
+P2
+CVE-2023-29088	ifratric	Fixed	Jan 23, 2023	Apr 10, 2023	Samsung	Shannon	
+Shannon Baseband: Stack buffer overflow when decoding SIP Session-Expires header
+42451554	
+P2
+CVE-2023-29085	ifratric	Fixed	Jan 23, 2023	Apr 10, 2023	Samsung	Shannon	
+Shannon Baseband: Stack buffer overflow when decoding SIP status line
+42451553	
+P2
+CVE-2023-29090	ifratric	Fixed	Jan 23, 2023	Apr 10, 2023	Samsung	Shannon	
+Shannon Baseband: Stack buffer overflow in SIP Via header decoder
+42451550	
+P2
+CVE-2023-29091	ifratric	Fixed	Jan 16, 2023	Apr 10, 2023	Samsung	Shannon	
+Shannon Baseband: Stack buffer overflow in SIP URI decoder
+42451547	
+P2
+CVE-2023-28613	ifratric	Fixed	Jan 5, 2023	Apr 4, 2023	Samsung	Shannon	
+Shannon Baseband: Integer overflow when reassembling IPv4 fragments
+42451543	
+P2
+CVE-2023-26496	natashenka	Fixed	Dec 19, 2022	Mar 6, 2024	Samsung	Shannon	
+Shannon Baseband: Memory corruption when processing fmtp SDP attribute
+42451542	
+P2
+CVE-2023-26497	natashenka	Fixed	Dec 19, 2022	Mar 6, 2023	Samsung	Shannon	
+Shannon Baseband: Memory corruption when processing acfg and pcfg SDP attributes
+42451541	
+P2
+CVE-2023-26498	natashenka	Fixed	Dec 19, 2022	Mar 6, 2023	Samsung	Shannon	
+Shannon Baseband: Memory corruption when processing chatroom SDP attribute
+42451538	
+P2
+CVE-2023-26076	ifratric	Fixed	Dec 19, 2022	Mar 7, 2023	Samsung	Shannon	
+Shannon Baseband: Intra-object overflow in NrSmPcoCodec when decoding reserved options
+42451537	
+P2
+CVE-2023-26075	ifratric	Fixed	Dec 15, 2022	Mar 7, 2023	Samsung	Shannon	
+Shannon Baseband: Intra-object overflow in NrmmMsgCodec when decoding Service Area List
+42451536	
+P2
+CVE-2023-26074	ifratric	Fixed	Dec 15, 2022	Mar 7, 2023	Samsung	Shannon	
+Shannon Baseband: Heap buffer overflow in NrmmMsgCodec when decoding Operator-defined access category definitions
+42451535	
+P2
+CVE-2023-26073	fwilhelm, ianbeer, ifratric	Fixed	Dec 15, 2022	Mar 7, 2023	Samsung	Shannon	
+Shannon Baseband: Heap buffer overflow in NrmmMsgCodec when decoding Extended emergency number list
+42451534	
+P2
+CVE-2023-26072	fwilhelm, ianbeer, ifratric	Fixed	Dec 15, 2022	Mar 7, 2023	Samsung	Shannon	
+Shannon Baseband: Heap buffer overflow in NrmmMsgCodec when decoding Emergency number list
+42451520	
+P2
+CVE-2023-24033	natashenka	Fixed	Nov 11, 2022	Mar 6, 2023	Samsung	Shannon	
+Shannon Baseband: Memory corruption when processing accept-type SDP attribute
+42451286	
+P2
+CVE-2021-25407	hawkes	Fixed	Mar 19, 2021	Jun 8, 2021	Samsung	NPU	
+Samsung NPU (Neural Processing Unit) out-of-bounds write in npu_session_format
+42451178	
+P2
+hawkes	Fixed	Aug 7, 2020	Nov 6, 2020	Samsung	NPU	
+Samsung NPU (Neural Processing Unit) memory corruption in shared memory parsing
+42451145	
+P2
+mjurczyk	Fixed	May 19, 2020	Jul 7, 2020	Samsung	Android	
+Samsung Android heap buffer overflow and other issues in the Skia Qmage image codec (fuzzing iteration #2)
+42451103	
+P2
+CVE-2020-8899	mjurczyk	Fixed	Jan 28, 2020	May 6, 2020	Samsung	Android	
+Samsung Android multiple interactionless RCEs and other remote access issues in Qmage image codec built into Skia
+42451087	
+P2
+jannh	Fixed	Dec 14, 2019	Feb 1, 2020	Samsung	Android	
+Samsung: UAF via missing locking in SEND_FILE_WITH_HEADER handler in f_mtp_samsung.c
+42451078	
+P2
+CVE-2020-10843	bazad	Fixed	Nov 27, 2019	Feb 1, 2020	Samsung	Android	
+Samsung kernel: /dev/hdcp2 hdcp_session_close() race conditions.
+42451076	
+P2
+ianbeer	Fixed	Nov 27, 2019	Feb 1, 2020	Samsung	Android	
+Samsung kernel: Heap OOB-write in /dev/tsmux
+42451075	
+P2
+CVE-2020-10841	bazad	Fixed	Nov 27, 2019	Feb 1, 2020	Samsung	Android	
+Samsung kernel: Arbitrary-kfree in /dev/vipx and /dev/vertex
+42451074	
+P2
+CVE-2020-10840	bazad	Fixed	Nov 27, 2019	Feb 1, 2020	Samsung	Android	
+Samsung kernel: pointer leak in /dev/vipx
+42451058	
+P2
+jannh	Fixed	Nov 11, 2019	Feb 1, 2020	Samsung	Android	
+Samsung kernel: logic bug and locking issue in PROCA lead to UAF+doublefree from app context
+42450585	
+P2
+CVE-2018-10751	natashenka	Fixed	Feb 21, 2018		Samsung	S7-Edge	
+Samsung Galaxy S7 Edge: Overflow in OMACP WbXml String Extension Processing
+42450261	
+P2
+laginimaineb	Obsolete	Apr 21, 2017		Samsung	MobiCore	
+Samsung: Trustonic <t-base TEE does not perform revocation of trustlets
+42450047	
+P2
+laginimaineb	Fixed	Dec 15, 2016		Samsung	Android	
+Samsung: RKP kernel protection bypass via lack of MSR trapping on Qualcomm devices
+42452517	
+P2
+laginimaineb	Fixed	Nov 3, 2016		Samsung	Android	
+Samsung: RKP Memory Corruption via "rkp_set_init_page_ro"
+42452515	
+P2
+laginimaineb	Fixed	Nov 2, 2016		Samsung	Android	
+Samsung: RKP information disclosure via s2-remapping physical ranges
+42452514	
+P2
+laginimaineb	Fixed	Nov 2, 2016		Samsung	Android	
+Samsung: RKP EL1 Code Loading Bypass
+42452513	
+P2
+laginimaineb	Fixed	Nov 1, 2016		Samsung	Android	
+Samsung: RKP privilege escalation via unprotected MSRs in EL1 to memory management control registers
+42452511	
+P2
+laginimaineb	Fixed	Nov 1, 2016		Samsung	Android	
+Samsung: RKP Memory Corruption in "cfp_ropp_new_key_reenc" and "cfp_ropp_new_key"
+42452503	
+P2
+laginimaineb	Fixed	Oct 24, 2016		Samsung	Android	
+Samsung: KASLR bypass in "pm_qos"
+42452502	
+P2
+laginimaineb	Fixed	Oct 24, 2016		Samsung	Android	
+Samsung: RKP Memory Corruption in "rkp_mark_adbd"
+42452500	
+P2
+laginimaineb	Fixed	Oct 19, 2016		Samsung	Android	
+Samsung: Buffer overflow in "fps" sysfs entry
+42452499	
+P2
+laginimaineb	Fixed	Oct 19, 2016		Samsung	Android	
+Samsung: Race condition in sec_ts touchscreen sysfs interface
+42452498	
+P2
+laginimaineb	Fixed	Oct 19, 2016		Samsung	Android	
+Samsung: Multiple overflows in TSP sysfs "cmd_store"
+42452497	
+P2
+laginimaineb	Fixed	Oct 18, 2016		Samsung	Android	
+Samsung: OOB write in ssp_batch_ioctl
+42452495	
+P2
+laginimaineb	Fixed	Oct 7, 2016		Samsung	Android	
+Samsung: Kernel information disclosure in "maxdsm_read"
+42452494	
+P2
+laginimaineb	Fixed	Oct 7, 2016		Samsung	Android	
+Samsung: Race condition in max86902 driver sysfs interfaces
+42452493	
+P2
+laginimaineb	Infeasible	Oct 5, 2016		Samsung	Android	
+Samsung: Kernel memory corruption via unchecked pointer in tzic_ioctl
+42452491	
+P2
+laginimaineb	Fixed	Oct 4, 2016		Samsung	Android	
+Samsung: TIMA Arbitrary Kernel Module Verification Bypass
+42452487	
+P2
+laginimaineb	Fixed	Sep 29, 2016		Samsung	Android	
+Samsung: Heap-overflow in "tlc_server" via LOAD_TUI_RESOURCE command
+42452468	
+P2
+laginimaineb	Fixed	Sep 13, 2016		Samsung	Android	
+Samsung: Stack buffer overflow and information disclosure in OTP TrustZone trustlet via OTP_GET_CRYPTO_DERIVED_KEY
+42452467	
+P2
+laginimaineb	Fixed	Sep 13, 2016		Samsung	Android	
+Samsung: Stack buffer overflow in OTP TrustZone trustlet
+42452464	
+P2
+laginimaineb	Fixed	Sep 12, 2016		Samsung	Android	
+Samsung: Heap overflow in "OTP" service on Samsung devices
+42452326	
+P2
+markbrand	Fixed	Apr 5, 2016		Samsung	S6	
+Samsung Android: JACK privilege elevation
+42452325	
+P2
+markbrand	Fixed	Apr 5, 2016		Samsung	S6	
+Samsung Android: JACK ASLR bypass
+42452130	
+P2
+natashenka	Fixed	Nov 6, 2015		Samsung	S6	
+Samsung Galaxy S6: libQjpeg je_free Crash
+42452129	
+P2
+natashenka	Fixed	Nov 6, 2015		Samsung	S6	
+Samsung Galaxy S6: android.media.process Face Recognition Memory Corruption (MdConvertLine)
+42452001	
+P2
+CVE-2015-7898	natashenka	Fixed	Aug 3, 2015		Samsung	S6	
+Samsung Galaxy S6: Samsung Gallery GIF Parsing Crash
+42451999	
+P2
+CVE-2015-7897	natashenka	Fixed	Aug 3, 2015		Samsung	S6	
+Samsung Galaxy S6: android.media.process Face Recognition Memory Corruption
+42451998	
+P2
+CVE-2015-7896	natashenka	Fixed	Aug 3, 2015		Samsung	S6	
+Samsung Galaxy S6: libQjpeg DoIntegralUpsample Crash
+42451997	
+P2
+CVE-2015-7895	natashenka	Fixed	Aug 3, 2015		Samsung	S6	
+Samsung Galaxy S6: Samsung Gallery Bitmap Decoding Crash
+42451995	
+P2
+CVE-2015-7894	natashenka	Fixed	Jul 29, 2015		Samsung	S6	
+Samsung libQjpeg image decoding memory corruption
+42451994	
+P2
+CVE-2015-7893	forshaw	Fixed	Jul 29, 2015		Samsung	S6	
+Samsung SecEmailUI script injection
+42451993	
+P2
+CVE-2015-7892	hawkes	Fixed	Jul 29, 2015		Samsung	S6	
+Samsung m2m1shot kernel driver buffer overflow
+42451992	
+P2
+CVE-2015-7891	leecam	Fixed	Jul 29, 2015		Samsung	S6	
+Samsung fimg2d FIMG2D_BITBLT_BLIT ioctl concurrency flaw
+42451991	
+P2
+CVE-2015-7890	ianbeer	Fixed	Jul 29, 2015		Samsung	S6	
+Samsung seiren kernel driver buffer overflow
+42451990	
+P2
+CVE-2015-7889	forshaw	Fixed	Jul 29, 2015		Samsung	S6	
+Samsung SecEmailComposer QUICK_REPLY_BACKGROUND permissions weakness
+42451988	
+P2
+CVE-2015-7888	markbrand	Fixed	Jul 29, 2015		Samsung	S6	
+Samsung WifiHs20UtilityService path traversal
