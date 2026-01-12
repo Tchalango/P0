@@ -91,6 +91,9 @@ Vérifier le crash avec ASAN/MSAN sur émulateur.
 ### Étape 21 : Test Crash sur Device Réel
 Confirmer le crash sur device physique avec debugger (lldb, gdb).
 
+### Étape 21.5 : Debug Environment Setup
+Configurer l'environnement de debug sur device : lldb-server, frida-server, logcat, tombstone analysis, symbols.
+
 ### Étape 22 : Crash Analysis
 Analyser les registres, stack, heap au moment du crash pour comprendre le contrôle obtenu.
 
@@ -113,6 +116,9 @@ Si ASLR actif, développer une fuite d'adresse (heap, stack, ou code).
 ### Étape 25.5 : Target Identification
 Identifier les cibles à corrompre : vtables, function pointers, return addresses, metadata, flags critiques.
 
+### Étape 25.7 : Leak Integration / Multi-Stage Design
+Intégrer le leak dans la chaîne : single-stage (leak + exploit même trigger) ou multi-stage (2+ triggers séparés).
+
 ---
 
 ## PHASE F : EXPLOIT DEVELOPMENT
@@ -129,6 +135,9 @@ Construire la chaîne de gadgets pour exécuter le payload.
 ### Étape 29 : Payload Development
 Créer le shellcode ou la commande à exécuter.
 
+### Étape 29.5 : Sandbox Escape
+Si sandboxé, développer l'escape ou le pivot vers un process privilégié.
+
 ### Étape 30 : Bypass Mitigations
 Implémenter les bypass : CFI bypass, PAC bypass, sandbox escape si nécessaire.
 
@@ -141,6 +150,9 @@ Assembler tous les composants dans un seul fichier malicieux.
 
 ### Étape 32 : Test End-to-End sur Émulateur
 Tester l'exploit complet sur émulateur d'abord.
+
+### Étape 32.5 : Failure Analysis
+Si échec : identifier la cause (timing, layout, version), ajuster et réitérer.
 
 ### Étape 33 : Test End-to-End sur Device Rooté
 Tester sur device rooté pour debug facile.
@@ -193,7 +205,7 @@ Créer le package final : exploit + instructions + vidéo démo.
 | **B** | 11-13 | Atteignabilité |
 | **C** | 14-17 | Environnement |
 | **D** | 18-22.5 | PoC Crash |
-| **E** | 23-25.5 | Primitive & Stratégie |
+| **E** | 23-25.7 | Primitive & Stratégie |
 | **F** | 26-30 | Exploit Dev |
 | **G** | 31-35 | Intégration & Test |
 | **H** | 36-39 | Stabilisation |
@@ -201,4 +213,4 @@ Créer le package final : exploit + instructions + vidéo démo.
 
 ---
 
-*Total : 48 étapes | 9 phases*
+*Total : 52 étapes | 9 phases*
