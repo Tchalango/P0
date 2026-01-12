@@ -113,6 +113,9 @@ Planifier la chaîne complète : info leak → ASLR bypass → control flow hija
 ### Étape 25 : Info Leak Development
 Si ASLR actif, développer une fuite d'adresse (heap, stack, ou code).
 
+### Étape 25.3 : Auxiliary Bug Search
+Si le bug principal ne permet pas de leak, chercher un bug auxiliaire (OOB read, format string, timing side-channel, uninitialized memory).
+
 ### Étape 25.5 : Target Identification
 Identifier les cibles à corrompre : vtables, function pointers, return addresses, metadata, flags critiques.
 
@@ -123,23 +126,29 @@ Intégrer le leak dans la chaîne : single-stage (leak + exploit même trigger) 
 
 ## PHASE F : EXPLOIT DEVELOPMENT
 
-### Étape 26 : Heap Feng Shui / Memory Grooming
+### Étape 26 : Mitigation Bypass Strategy
+Définir la stratégie de bypass AVANT de construire l'exploit : CFI bypass, PAC bypass, stack canary bypass, ASLR defeat.
+
+### Étape 26.3 : Allocator-Specific Techniques
+Adapter les techniques à l'allocateur cible : jemalloc (size classes), scudo (quarantine bypass), PartitionAlloc (bucket spray), tcmalloc.
+
+### Étape 26.5 : Heap Feng Shui / Memory Grooming
 Manipuler le heap pour placer les objets aux bonnes positions.
 
 ### Étape 27 : Control Flow Hijack
-Écraser pointeur de fonction, vtable, return address, ou GOT entry.
+Écraser pointeur de fonction, vtable, return address, ou GOT entry (en respectant les contraintes CFI/PAC).
 
 ### Étape 28 : ROP/JOP Chain Construction
-Construire la chaîne de gadgets pour exécuter le payload.
+Construire la chaîne de gadgets compatible avec les mitigations actives.
 
 ### Étape 29 : Payload Development
 Créer le shellcode ou la commande à exécuter.
 
-### Étape 29.5 : Sandbox Escape
-Si sandboxé, développer l'escape ou le pivot vers un process privilégié.
+### Étape 29.3 : Second Bug for Sandbox Escape
+Si sandboxé, identifier et exploiter un 2ème bug pour escape : kernel vuln, IPC vuln, confused deputy, file descriptor leak.
 
-### Étape 30 : Bypass Mitigations
-Implémenter les bypass : CFI bypass, PAC bypass, sandbox escape si nécessaire.
+### Étape 29.5 : Sandbox Escape Implementation
+Implémenter l'escape ou le pivot vers un process privilégié.
 
 ---
 
@@ -206,11 +215,11 @@ Créer le package final : exploit + instructions + vidéo démo.
 | **C** | 14-17 | Environnement |
 | **D** | 18-22.5 | PoC Crash |
 | **E** | 23-25.7 | Primitive & Stratégie |
-| **F** | 26-30 | Exploit Dev |
+| **F** | 26-29.5 | Exploit Dev |
 | **G** | 31-35 | Intégration & Test |
 | **H** | 36-39 | Stabilisation |
 | **I** | 40-43 | Documentation |
 
 ---
 
-*Total : 52 étapes | 9 phases*
+*Total : 57 étapes | 9 phases*
